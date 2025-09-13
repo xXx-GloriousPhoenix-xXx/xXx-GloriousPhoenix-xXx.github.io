@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI For Students</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+    <section>
+        <h1>Radiobutton</h1>
+        <p>
+            Radiobutton - елемент мови розмітки, який дозволяє обрати один і лише один з запропонованих варіантів.
+            Зручні, коли потрібно обрати одну опцію з невеликого переліку, який одразу видно на екрані без скроллу.
+            Приклад такого елементу наведено нижче. Користувач може обрати категорію акаунту, що створюється:
+        </p>
+        <form>
+            <label>
+                <input type="radio" name="role" value="teacher">
+                Teacher
+            </label>
+            <label>
+                <input type="radio" name="role" value="student">
+                Student
+            </label>
+            <label>
+                <input type="radio" name="role" value="parent">
+                Parent
+            </label>
+        </form>
+    </section>
+    <section>
+        <h1>Checkbox</h1>
+        <p>
+            Checkbox - елемент мови розмітки, який дозволяє обрати одну або кілька опцій з запропонованого переліку.
+            Зручні, коли потрібно обрати кілька опцій з невеликого переліку, який одразу видно на екрані без скроллу.
+            Приклад такого елементу наведено нижче. Користувач може обрати категорії новин, які його цікавлять:
+        </p>
+        <form>
+            <label>
+                <input type="checkbox" name="news" value="sports">
+                Sports
+            </label>
+            <label>
+                <input type="checkbox" name="news" value="technology">
+                Technology
+            </label>
+            <label>
+                <input type="checkbox" name="news" value="entertainment">
+                Entertainment
+            </label>
+        </form>
+    </section>
+    <section>
+        <h1>Text input</h1>
+        <p>
+            Text input - елемент мови розмітки, який дозволяє користувачу ввести текстову інформацію.
+            Зручні для збору коротких текстових даних, таких як ім'я, електронна пошта або пароль.
+            Приклад такого елементу наведено нижче. Користувач може ввести своє ім'я:
+        </p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter your name">
+        </form>
+    </section>
+    <section>
+        <h1>Tabs</h1>
+        <p>
+            Tabs - елемент мови розмітки, який дозволяє організувати контент у вигляді вкладок.
+            Зручні для розподілу великої кількості інформації на логічні секції, які користувач може швидко перемикати.
+            Приклад такого елементу наведено нижче. Користувач може перемикатися між різними секціями контенту:
+        </p>
+        <div class="tab-wrapper">
+            <div id="tab-list"></div>
+            <div id="tab-content"></div>
+        </div>
+    </section>
+    <script src="scripts/index.js"></script>
+    <section>
+        <h1>Button</h1>
+        <p>
+            Button - елемент мови розмітки, який дозволяє користувачу виконати певну дію при натисканні.
+            Зручні для відправки форм, запуску скриптів або навігації по сайту.
+            Приклад такого елементу наведено нижче. Користувач може натиснути кнопку для відправки форми:
+        </p>
+        <div class="sign-in">
+            <input type="email" placeholder="email">
+            <input type="password" placeholder="password">
+            <button>Sign in</button>
+        </div>
+    </section>
+    <section>
+        <h1>Text label</h1>
+        <p>
+            Text label - елемент мови розмітки, який використовується для відображення текстової інформації.
+            Зручні для пояснення функцій інших елементів інтерфейсу або надання додаткового контексту.
+            Приклад такого елементу наведено нижче. Користувач може прочитати інструкцію перед заповненням форми:
+        </p>
+        <label class="hint">
+            Пароль повинен містити не менше 8 символів, включаючи великі та малі літери, цифри та спеціальні символи.
+        </label>
+    </section>
+    <section>
+        <h1>Link</h1>
+        <p>
+            Link - елемент мови розмітки, який дозволяє користувачу перейти на іншу сторінку або розділ сайту.
+            Зручні для навігації по сайту та доступу до додаткової інформації.
+            Приклад такого елементу наведено нижче. Користувач може натиснути посилання, щоб перейти до перегляду відео:
+        </p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Переглянути відео</a>
+    </section>
+    <section>
+        <h1>Tooltip</h1>
+        <p>
+            Tooltip - елемент мови розмітки, який відображає додаткову інформацію при наведенні курсору на інший елемент.
+            Зручні для надання підказок або пояснень без захаращення інтерфейсу.
+            Приклад такого елементу наведено нижче. Користувач може навести курсор на іконку, щоб побачити підказку:
+        </p>
+        <div class="tooltip">
+            <img src="https://media.tenor.com/hxrPujEiI2wAAAAe/%D0%BB%D0%B0%D0%B9%D0%BA.png" alt="cool emoji" class="tooltip">
+        </div>
+    </section>
+    <section>
+        <h1>Dropdown list</h1>
+        <p>
+            Dropdown list - елемент мови розмітки, який дозволяє користувачу обрати одну опцію з випадаючого списку.
+            Зручні для економії місця на екрані та організації великої кількості опцій.
+            Приклад такого елементу наведено нижче. Користувач може обрати країну зі списку:
+        </p>
+        <select>
+            <option value="Ukraine">Україна</option>
+            <option value="Poland">Польща</option>
+            <option value="Germany">Німеччина</option>
+        </select>
+    </section>
+    <section>
+        <h1>Data grid</h1>
+        <p>
+            Data grid - елемент мови розмітки, який відображає табличні дані у вигляді сітки.
+            Зручні для організації та перегляду великої кількості інформації в структурованому форматі.
+            Приклад такого елементу наведено нижче. Користувач може переглянути таблицю продаж по днях.
+        </p>
+        <div class="grid-wrapper">
+            <div>Дата</div><div>Продажі</div>
+            <div>23.08.2023</div><div>1450.00$</div>
+            <div>24.08.2023</div><div>1530.00$</div>         
+            <div>25.08.2023</div><div>1480.00$</div>
+        </div>
+    </section>
+    <section>
+        <label>Виконав: ІП-34 Приходько Роман Юрійович</label>
+    </section>
+</body>
+</html>
